@@ -40,6 +40,5 @@ project "GLFW"
             "_CRT_SECURE_NO_WARNINGS"
         }
 
-    filter "configurations:Release"
-        defines "Release"
-        optimize "On"
+    filter { "system:windows", "configurations:Release" }
+        buildoptions "/MT"
