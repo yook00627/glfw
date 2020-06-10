@@ -34,7 +34,7 @@ project "GLFW"
             "src/osmesa_context.c"
         }
 
-        define
+        defines
         {
             "_GLFW_WIN32",
             "_CRT_SECURE_NO_WARNINGS"
